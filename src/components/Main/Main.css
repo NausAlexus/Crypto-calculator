@@ -1,0 +1,92 @@
+.main-container {
+    width: 523px;
+    background: linear-gradient(180deg, #222342 0%, rgba(34, 35, 66, 0) 100%);
+    box-shadow: 0px 4px 40px 0px #00000040;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.main-container-title {
+    display: flex;
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 25.2px;
+    letter-spacing: 0.02em;
+    gap: 14px;
+}
+.main-container-title p {
+    margin: 0;
+    color: var(--white-color);
+    opacity: 0.3;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.main-info {
+    margin-top: 20px;
+    height: 40px;
+    min-height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+    background: var(--violet-light);
+    border-radius: 10px;
+}
+.main-info p {
+    color: var(--white-color);
+    padding: 9px 0;
+
+    opacity: 70%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.02em;
+}
+.main-info span {
+    color: var(--blue-color);
+    opacity: 70%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.02em;
+}
+.main-wallet-btn {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: var(--blue-color);
+    border: none;
+    height: 56px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28.8px;
+    color: var(--white-color);
+    transition: opacity 0.3s ease;
+}
+@media (min-width: 1025px) {
+    .main-container-title p:hover {
+        opacity: 1;
+    }
+    .main-wallet-btn:hover {
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 560px) {
+    .main-container {
+        width: 95%;
+    }
+    .calculator-input {
+        width: 100%;
+    }
+    .main-info {
+        height: 100%;
+    }
+}
